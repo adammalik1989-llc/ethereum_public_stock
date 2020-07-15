@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
+        <!-- The generated javascript and app.js will be substituted in below -->
+        <!-- JAVASCRIPT -->
+
+        <!-- The app.css contents will be substituted in below -->
+        <!-- STYLE -->
+    </head>
+    <body>
+        <div id="welcome-container">
+            <h1>Welcome!</h1>
+            <h3>Please deploy (<img src="/static/img/rocket-ship.svg" color="#fff" height="14" width="14">) your contract to begin.</h3>
+        </div>
+          <div id="main-container" class="hidden">
+            <!-- Form fields for minting new tokens -->
+            <div id="create" class="tabcontent">
+                <h2>Buat Saham Baru</h2>
+                <div class="input-group">
+                    <h3>ID Perusahaan</h3>
+                    <input type="text" id="create-address" placeholder="Masukan ID Perusahaan atau ID Personal..." />
+                </div>
+                <div class="input-group">
+                    <h3>Jumlah Nominal Saham</h3>
+                    <input type="number" id="create-amount" placeholder="Jumlah Nominal..." />
+                </div>
+                <div class="input-group">
+                    <button class="btn" id="button-create">Terbitkan</button>
+                </div>
+            </div>
+            <!-- Form fields for checking address balance -->
+            <div id="balances" class="tabcontent">
+                <h2>Check Saldo Saham</h2>
+                <div class="input-group">
+                    <h3>ID Perusahaan atau ID Personal</h3>
+                    <input type="text" id="balance-address" placeholder="Masukan ID Perusahaan atau ID Personal..." />
+                </div>
+                <div class="input-group">
+                    <button class="btn" id="button-check">Check Saldo</button>
+                </div>
+            </div>
+            <h1 class="text message">Balance:&nbsp;<span id="message"></span></h1>
+        </div>
+    </body>
+</html>
